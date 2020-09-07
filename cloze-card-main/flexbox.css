@@ -4,7 +4,6 @@
     --footer-height:    4em;
 
 
-/* solarized colors */
     --base03:           #002b36;
     --base02:           #073642;
     --base01:           #586e75;
@@ -22,13 +21,16 @@
     --solar-cyan:       #2aa198;
     --solar-green:      #859900;
 
-/* theme color variables */
+
     --color-emphasis:       var(--base01);
     --color-primary:        var(--base00);
     --color-secondary:      var(--base1);
     --color-background-hi:  var(--base2);
     --color-background:     var(--base3);
     --color-accent-main:    var(--solar-orange);
+    --color-accent-bold:    var(--solar-yellow);
+    --color-accent-italic:  var(--solar-green);
+
 }
 
 
@@ -41,9 +43,22 @@
     color: var(--color-primary);
 }
 
+b {
+    color: var(--color-accent-bold);
+}
+
+i {
+    color: var(--color-accent-italic);
+}
+
+
 .cloze {
     font-size: 20px;
     font-weight: bold;
+    color: var(--color-accent-main);
+}
+
+.cloze b {
     color: var(--color-accent-main);
 }
 
@@ -65,12 +80,12 @@ body {
 
 .card-content {
     flex: 1;
-    padding: 8%;
+    padding: 8% 8% 4% 8%;
 }
 
 .footer {
     background: var(--color-background-hi);
-    padding: 0% 8%;
+    padding: 1% 8%;
 }
 
 
@@ -79,7 +94,7 @@ body {
 .panel { /* -- to contain the label and the additional info in flexbox */
     display: flex;
     flex-direction: row;
-    padding: 1% 0;
+    padding: 0;
 }
 
 .label {
@@ -118,17 +133,18 @@ body {
 
 .metanote {
     font-size: 14px;
+    font-weight: bold;
     color: var(--solar-red);
 }
 
 .image {
     font-size: 14px;
+    font-weight: bold;
     color: var(--color-secondary);
 }
 
 
 .extra-info {
-    background-color: rgba(0,0,200,0.04);
     font-size: 16px;
     color: var(--color-secondary);
     padding: 1%;
