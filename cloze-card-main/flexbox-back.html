@@ -1,0 +1,65 @@
+<container class="card-container">
+
+    <content class= "card-content">
+        {{#Preamble}}
+            {{Preamble}} <br> <br>
+        {{/Preamble}}
+        {{cloze:Text1}}
+        {{cloze:Text2}}
+        {{cloze:Text3}}
+        {{cloze:Text4}}
+        {{cloze:Text5}}
+        {{cloze:Text6}}
+        {{cloze:Text7}}
+        {{cloze:Text8}}
+        {{cloze:Text9}}
+        {{cloze:Text10}}
+        {{cloze:Text11}}
+        {{cloze:Text12}}
+        {{cloze:Text13}}
+        {{cloze:Text14}}
+        <hr>
+
+        {{#Metanote}}
+            <div class= "metanote" > ! {{Metanote}} ! </div>
+           <br>
+        {{/Metanote}}
+
+        {{#Mnemonic}}
+        <div class= "panel">
+            <div class="label"> mnemonic: </div>
+            <div class="mnemonic"> {{Mnemonic}} </div>
+        </div>
+        <br>
+        {{/Mnemonic}}
+
+        {{#extra-info}}
+            <div class="extra-info"> {{extra-info}} </div>
+            <br>
+        {{/extra-info}}
+
+        {{#Image}}
+            <div class="image"> {{Image}} </div>
+            <br>
+        {{/Image}}
+
+    </content>
+
+    <footer class= "footer" >
+        {{#Source}}
+        <div class= "panel">
+            <div class="label"> Fonte: </div>
+            <div class="source"> {{Source}} </div>
+        </div>
+        {{/Source}}
+        {{#Tags}}
+        <div class= "panel">
+            <div class="label"> Tags: </div>
+            <div class="tags"> {{Tags}} </div>
+        </div>
+        {{/Tags}}
+    </footer>
+   {{#note-link}}
+    <div class="note-link"> {{note-link}} </div>
+    {{/note-link}}
+</container>

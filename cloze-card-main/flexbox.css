@@ -1,0 +1,177 @@
+/* -------------- CSS Variables ---------------- */
+
+:root {
+    --footer-height:    4em;
+
+
+/* solarized colors */
+    --base03:           #002b36;
+    --base02:           #073642;
+    --base01:           #586e75;
+    --base00:           #657b83;
+    --base0:            #839496;
+    --base1:            #93a1a1;
+    --base2:            #eee8d5;
+    --base3:            #fdf6e3;
+    --solar-yellow:     #b58900;
+    --solar-orange:     #cb4b16;
+    --solar-red:        #dc322f;
+    --solar-magenta:    #d33682;
+    --solar-violet:     #6c71c4;
+    --solar-blue:       #268bd2;
+    --solar-cyan:       #2aa198;
+    --solar-green:      #859900;
+
+/* theme color variables */
+    --color-emphasis:       var(--base01);
+    --color-primary:        var(--base00);
+    --color-secondary:      var(--base1);
+    --color-background-hi:  var(--base2);
+    --color-background:     var(--base3);
+    --color-accent-main:    var(--solar-orange);
+}
+
+
+/* ----------- CSS ANKI -------------- */
+
+.card {
+    font-family: "avenir";
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.cloze {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-accent-main);
+}
+
+body {
+    margin: 0;
+    text-align: left;
+}
+
+
+/* ---------------- CSS card layout ---------------- */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: var(--color-background);
+}
+
+.card-content {
+    flex: 1;
+    padding: 8%;
+}
+
+.footer {
+    background: var(--color-background-hi);
+    padding: 0% 8%;
+}
+
+
+/* ------- Flexbox extras ------- */
+
+.panel { /* -- to contain the label and the additional info in flexbox */
+    display: flex;
+    flex-direction: row;
+    padding: 1% 0;
+}
+
+.label {
+    font-size: 14px;
+    color: var(--accent-main);
+    min-width: 6em;
+}
+
+.mnemonic {
+    font-size: 14px;
+    color: var(--solar-cyan);
+}
+
+
+.footer .label {
+    font-size: 14px;
+    color: var(--color-secondary);
+    min-width: 3.5em;
+}
+
+.source {
+    color: var(--color-primary);
+    font-size: 14px;
+
+}
+
+.tags {
+    word-spacing: 2em;
+    font-size: 14px;
+
+}
+
+
+
+/* --------------- CSS card elements ----------------- */
+
+.metanote {
+    font-size: 14px;
+    color: var(--solar-red);
+}
+
+.image {
+    font-size: 14px;
+    color: var(--color-secondary);
+}
+
+
+.extra-info {
+    background-color: rgba(0,0,200,0.04);
+    font-size: 16px;
+    color: var(--color-secondary);
+    padding: 1%;
+}
+
+.note-link {
+    padding: 1% 8%;
+    font-size: 14px;
+    text-align: right;
+}
+
+img {
+    display: block; /* necessary to set width images which are inline together with text */
+    max-width: 100%; /* fills the card */
+    max-height: 90vh; /* avoid images too long */
+    margin: auto; /* centers the image in its container */
+}
+
+ul, ol {
+    text-align: left;
+    display: block;
+    margin-top: 0.7em;
+    margin-bottom: 1em;
+}
+
+ul li, ol li {
+    margin-bottom: 0.3em;
+}
+
+ul ul, ol ol {
+    margin-top: -0.3em;
+    margin-bottom: 0.5em;
+}
+
+ul ul li, ol ol li {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+hr {
+    height: 1px;
+    background-color: var(--color-secondary);
+    border: none;
+    margin-top: 8%;
+    margin-bottom: 7%;
+}
