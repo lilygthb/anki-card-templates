@@ -99,13 +99,24 @@ body {
 
 .label {
     font-size: 14px;
-    color: var(--accent-main);
+    color: var(--color-secondary);
     min-width: 6em;
 }
 
 .mnemonic {
     font-size: 14px;
     color: var(--solar-cyan);
+}
+
+.label-extra {
+    font-size: 16px;
+    color: var(--color-secondary);
+    min-width: 3em;
+}
+
+.extra-info {
+    font-size: 16px;
+    color: var(--color-secondary);
 }
 
 
@@ -118,7 +129,6 @@ body {
 .source {
     color: var(--color-primary);
     font-size: 14px;
-
 }
 
 .tags {
@@ -141,13 +151,6 @@ body {
     font-size: 14px;
     font-weight: bold;
     color: var(--color-secondary);
-}
-
-
-.extra-info {
-    font-size: 16px;
-    color: var(--color-secondary);
-    padding: 1%;
 }
 
 .note-link {
