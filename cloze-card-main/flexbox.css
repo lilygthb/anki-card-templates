@@ -94,7 +94,10 @@ body {
 .panel { /* -- to contain the label and the additional info in flexbox */
     display: flex;
     flex-direction: row;
-    padding: 0;
+}
+
+.panel:first-of-type { /* -- space between two contiguous panels */
+    padding-bottom: 1.5%;
 }
 
 .label {
@@ -110,20 +113,21 @@ body {
 
 .label-extra {
     font-size: 16px;
+    font-style: italic;
     color: var(--color-secondary);
-    min-width: 3em;
+    min-width: 3.5rem; /* -- in rem for consistency with ".footer .label" */
 }
 
 .extra-info {
     font-size: 16px;
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 
 .footer .label {
     font-size: 14px;
     color: var(--color-secondary);
-    min-width: 3.5em;
+    min-width: 3.5rem;  /* -- in rem for consistency with ".label-extra" */
 }
 
 .source {
