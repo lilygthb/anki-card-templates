@@ -161,6 +161,12 @@ body {
     padding: 1% 8%;
     font-size: 14px;
     text-align: right;
+    color: var(--color-secondary);
+}
+
+a {
+    color: var(--solar-blue);
+    text-decoration: none;
 }
 
 img {
@@ -173,8 +179,8 @@ img {
 ul, ol {
     text-align: left;
     display: block;
-    margin-top: 0.7em;
-    margin-bottom: 1em;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
 }
 
 ul li, ol li {
