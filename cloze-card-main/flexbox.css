@@ -115,12 +115,15 @@ body {
     font-size: 16px;
     font-style: italic;
     color: var(--color-secondary);
-    min-width: 3.5rem; /* -- in rem for consistency with ".footer .label" */
+    background: var(--color-background-hi);
+    min-width: 3rem; /* -- in rem for consistency with ".footer .label" */
+    margin-right: 1em;
 }
 
 .extra-info {
     font-size: 16px;
     color: var(--color-primary);
+    padding-right: 5%;
 }
 
 
@@ -158,10 +161,12 @@ body {
 }
 
 .note-link {
-    padding: 1% 8%;
+    float: right;
+    padding-top: 1%;
     font-size: 14px;
     text-align: right;
     color: var(--color-secondary);
+    border-top: solid 2px var(--color-background-hi);
 }
 
 a {
@@ -181,6 +186,7 @@ ul, ol {
     display: block;
     margin-top: 0.4rem;
     margin-bottom: 1rem;
+    padding-left: 2rem;
 }
 
 ul li, ol li {
@@ -198,8 +204,8 @@ ul ul li, ol ol li {
 }
 
 hr {
-    height: 1px;
-    background-color: var(--color-secondary);
+    height: 3px;
+    background-color: var(--color-background-hi);
     border: none;
     margin-top: 8%;
     margin-bottom: 7%;
