@@ -80,7 +80,7 @@ body {
 
 .card-content {
     flex: 1;
-    padding: 8% 8% 4% 8%;
+    padding: 6% 8% 4% 8%;
 }
 
 .footer {
@@ -162,6 +162,7 @@ body {
 
 .note-link {
     float: right;
+    margin-top: 2%;
     padding-top: 1%;
     font-size: 14px;
     text-align: right;
