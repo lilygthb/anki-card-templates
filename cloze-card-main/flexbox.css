@@ -80,7 +80,7 @@ body {
 
 .card-content {
     flex: 1;
-    padding: 6% 8% 4% 8%;
+    padding: 6% 8% 2% 8%;
 }
 
 .footer {
@@ -147,6 +147,12 @@ body {
 
 
 /* --------------- CSS card elements ----------------- */
+
+.note-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-primary);
+}
 
 .metanote {
     font-size: 14px;
