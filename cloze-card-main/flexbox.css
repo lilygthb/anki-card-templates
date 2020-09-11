@@ -111,19 +111,26 @@ body {
     color: var(--solar-cyan);
 }
 
-.label-extra {
+.label-extra-sx {
     font-size: 16px;
     font-style: italic;
     color: var(--color-secondary);
+    padding-left: 1%;
     background: var(--color-background-hi);
     min-width: 3rem; /* -- in rem for consistency with ".footer .label" */
-    margin-right: 1em;
+}
+
+.label-extra-dx { /* -- spacer to center extra info -- */
+    font-size: 16px;
+    font-style: italic;
+    min-width: 3rem; /* -- in rem for consistency with ".footer .label" */
 }
 
 .extra-info {
     font-size: 16px;
     color: var(--color-primary);
-    padding-right: 5%;
+    padding: 0 2%;
+		flex-grow: 1; /* ensures it grows to fill the rest of card width left by label, important if short text is centered */
 }
 
 
@@ -148,16 +155,27 @@ body {
 
 /* --------------- CSS card elements ----------------- */
 
-.note-title {
-    font-size: 20px;
+.note-subject {
+    font-size: 22px;
     font-weight: bold;
-    color: var(--color-primary);
+    color: var(--color-emphasis);
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-color: var(--color-secondary);
+
 }
 
 .metanote {
     font-size: 14px;
     font-weight: bold;
     color: var(--solar-red);
+    animation: flash 1s linear infinite; /* adds animation */
+}
+
+@keyframes flash { /* animation parameters */
+  50% {
+    opacity: 0;
+  }
 }
 
 .image {
