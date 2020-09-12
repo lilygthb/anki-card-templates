@@ -33,7 +33,7 @@
         <br>
         {{/Mnemonic}}
 
-        {{#extra-info}}
+       {{#extra-info}}
         <div class= "panel">
             <div class="label-extra-sx"> extra: </div>
             <div class="extra-info"> {{extra-info}} </div>
@@ -41,14 +41,17 @@
         </div>
         {{/extra-info}}
 
+        {{#note-link}}
+            <div class= "panel">
+                <div class="label-extra-sx"> altre <br> note: </div>
+                <div class="note-link"> {{note-link}} </div>
+            </div>
+        {{/note-link}}
+
         {{#Image}}
             <br>
             <div class="image"> {{Image}} </div>
         {{/Image}}
-
-        {{#note-link}}
-            <div class="note-link"> {{note-link}} </div>
-        {{/note-link}}
     </content>
 
     <footer class= "footer" >

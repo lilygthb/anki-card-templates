@@ -185,13 +185,10 @@ body {
 }
 
 .note-link {
-    float: right;
-    margin-top: 2%;
-    padding-top: 1%;
+    padding: 1% 2%;
     font-size: 14px;
-    text-align: right;
+    text-align: left;
     color: var(--color-secondary);
-    border-top: solid 2px var(--color-background-hi);
 }
 
 a {
