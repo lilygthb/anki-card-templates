@@ -1,8 +1,11 @@
 /* -------------- CSS Variables ---------------- */
 
 :root {
-    --footer-height:    4em;
-
+    --footer-height:         4em;
+    --padding-from-label:    0.5rem;
+    --label-width:           3.2rem;
+    --mmemo-line-height:     14px;
+    --note-link-line-height: 14px;
 
     --base03:           #002b36;
     --base02:           #073642;
@@ -28,7 +31,7 @@
     --color-background-hi:  var(--base2);
     --color-background:     var(--base3);
     --color-accent-main:    var(--solar-orange);
-    --color-accent-bold:    var(--solar-yellow);
+    --color-accent-bold:    var(--solar-blue);
     --color-accent-italic:  var(--solar-green);
 
 }
@@ -100,14 +103,26 @@ body {
     padding-bottom: 1.5%;
 }
 
-.label {
+.label-mnemo {
+    font-size: 14px;
+    line-height: var(--mmemo-line-height);
+    color: var(--color-secondary);
+    padding-left: 1%;
+    min-width: var(--label-width);
+}
+
+.label-footer {
     font-size: 14px;
     color: var(--color-secondary);
-    min-width: 6em;
+    padding-left: 1%;
+    min-width: var(--label-width);
 }
 
 .mnemonic {
-    font-size: 14px;
+    font-family: "menlo";
+    line-height: var(--mmemo-line-height);
+    padding: 0 var(--padding-from-label);
+    font-size: 12px;
     color: var(--solar-cyan);
 }
 
@@ -115,9 +130,9 @@ body {
     font-size: 16px;
     font-style: italic;
     color: var(--color-secondary);
-    padding-left: 1%;
     background: var(--color-background-hi);
-    min-width: 3rem; /* -- in rem for consistency with ".footer .label" */
+    padding-left: 1%;
+    min-width: var(--label-width);
 }
 
 .label-extra-dx { /* -- spacer to center extra info -- */
@@ -129,28 +144,21 @@ body {
 .extra-info {
     font-size: 16px;
     color: var(--color-primary);
-    padding: 0 2%;
-		flex-grow: 1; /* ensures it grows to fill the rest of card width left by label, important if short text is centered */
-}
-
-
-.footer .label {
-    font-size: 14px;
-    color: var(--color-secondary);
-    min-width: 3.5rem;  /* -- in rem for consistency with ".label-extra" */
+    padding: 0 var(--padding-from-label);
+    flex-grow: 1; /* ensures it grows to fill the rest of card width left by label, important if short text is centered */
 }
 
 .source {
     color: var(--color-primary);
     font-size: 14px;
+    padding: 0 var(--padding-from-label);
 }
 
 .tags {
     word-spacing: 2em;
     font-size: 14px;
-
+    padding: 0 var(--padding-from-label);
 }
-
 
 
 /* --------------- CSS card elements ----------------- */
@@ -159,10 +167,9 @@ body {
     font-size: 22px;
     font-weight: bold;
     color: var(--color-emphasis);
-    text-decoration-line: underline;
+    text-decoration-line: none;
     text-decoration-style: double;
     text-decoration-color: var(--color-secondary);
-
 }
 
 .metanote {
@@ -185,8 +192,9 @@ body {
 }
 
 .note-link {
-    padding: 1% 2%;
+    padding: 1% var(--padding-from-label);
     font-size: 14px;
+    line-height: var(--note-link-line-height);
     text-align: left;
     color: var(--color-secondary);
 }

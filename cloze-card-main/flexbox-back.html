@@ -26,24 +26,24 @@
         {{/Metanote}}
 
         {{#Mnemonic}}
-        <div class= "panel">
-            <div class="label"> mnemonic: </div>
-            <div class="mnemonic"> {{Mnemonic}} </div>
-        </div>
-        <br>
+            <div class= "panel">
+                <div class="label-mnemo"> mnemo: </div>
+                <div class="mnemonic"> {{Mnemonic}} </div>
+            </div>
+            <br>
         {{/Mnemonic}}
 
        {{#extra-info}}
-        <div class= "panel">
-            <div class="label-extra-sx"> extra: </div>
-            <div class="extra-info"> {{extra-info}} </div>
-            <div class="label-extra-dx"> </div>
-        </div>
+            <div class= "panel">
+                <div class="label-extra-sx"> extra: </div>
+                <div class="extra-info"> {{extra-info}} </div>
+                <div class="label-extra-dx"> </div>
+            </div>
         {{/extra-info}}
 
         {{#note-link}}
             <div class= "panel">
-                <div class="label-extra-sx"> altre <br> note: </div>
+                <div class="label-extra-sx"> links: </div>
                 <div class="note-link"> {{note-link}} </div>
             </div>
         {{/note-link}}
@@ -57,16 +57,17 @@
     <footer class= "footer" >
         {{#source}}
             <div class= "panel">
-                <div class="label"> Fonte: </div>
+                <div class="label-footer"> Fonte: </div>
                 <div class="source"> {{source}} </div>
             </div>
         {{/source}}
 
         {{#Tags}}
             <div class= "panel">
-                <div class="label"> Tags: </div>
+                <div class="label-footer"> Tags: </div>
                 <div class="tags"> {{Tags}} </div>
             </div>
         {{/Tags}}
     </footer>
+
 </container>
