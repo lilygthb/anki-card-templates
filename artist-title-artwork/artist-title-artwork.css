@@ -1,3 +1,8 @@
+src {
+    draggable: true;
+}
+
+
 .mac {
 margin-top: 1em;
 margin-left: 6em;
@@ -11,8 +16,8 @@ margin-right: 6em;
 display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 99%;
-
+ /*  width: 99%; */
+  max-height: 80vh;
 }
 
 .ipad {
@@ -31,7 +36,7 @@ margin-right: 5em;
     background-color: #fdf6e3;    /* solarized base3 */
 }
 
-#Answer {
+#card-answer {
     font-weight: bold;
     color: #268bd2;                /* solarized blue */
 }
@@ -58,12 +63,12 @@ margin-right: 5em;
 
 #T12_r {
    font-size: 12px;
-   color: #dc322f                 /* solarized red */              
+   color: #dc322f                 /* solarized red */
 }
 
 
 ul, ol {
-    text-align:left; 
+    text-align:left;
 /*     display: inline-block;*/	         /*-- disabled!--*/
 	margin-top: 0.2em;
 	margin-bottom: 0.2em;
