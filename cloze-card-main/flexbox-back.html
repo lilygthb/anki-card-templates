@@ -1,37 +1,37 @@
 <container class="card-container">
 
     <content class= "card-content">
-        {{#Preamble}}
-            <div class= "note-subject" > {{Preamble}} <br> <br> </div>
-        {{/Preamble}}
-        {{cloze:Text1}}
-        {{cloze:Text2}}
-        {{cloze:Text3}}
-        {{cloze:Text4}}
-        {{cloze:Text5}}
-        {{cloze:Text6}}
-        {{cloze:Text7}}
-        {{cloze:Text8}}
-        {{cloze:Text9}}
-        {{cloze:Text10}}
-        {{cloze:Text11}}
-        {{cloze:Text12}}
-        {{cloze:Text13}}
-        {{cloze:Text14}}
+        {{#preamble}}
+            <div class= "note-subject" > {{preamble}} <br> <br> </div>
+        {{/preamble}}
+        {{cloze:text1}}
+        {{cloze:text2}}
+        {{cloze:text3}}
+        {{cloze:text4}}
+        {{cloze:text5}}
+        {{cloze:text6}}
+        {{cloze:text7}}
+        {{cloze:text8}}
+        {{cloze:text9}}
+        {{cloze:text10}}
+        {{cloze:text11}}
+        {{cloze:text12}}
+        {{cloze:text13}}
+        {{cloze:text14}}
         <hr>
 
-        {{#Metanote}}
-            <div class= "metanote" > ! {{Metanote}} ! </div>
+        {{#note-meta}}
+            <div class= "metanote" > ! {{note-meta}} ! </div>
             <br>
-        {{/Metanote}}
+        {{/note-meta}}
 
-        {{#Mnemonic}}
+        {{#mnemonic}}
             <div class= "panel">
                 <div class="label-mnemo"> mnemo: </div>
-                <div class="mnemonic"> {{Mnemonic}} </div>
+                <div class="mnemonic"> {{mnemonic}} </div>
             </div>
             <br>
-        {{/Mnemonic}}
+        {{/mnemonic}}
 
        {{#extra-info}}
             <div class= "panel">
@@ -48,10 +48,10 @@
             </div>
         {{/note-link}}
 
-        {{#Image}}
+        {{#image}}
             <br>
-            <div class="image"> {{Image}} </div>
-        {{/Image}}
+            <div class="image"> {{image}} </div>
+        {{/image}}
     </content>
 
     <footer class= "footer" >
