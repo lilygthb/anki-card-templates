@@ -1,9 +1,11 @@
 /* -------------- CSS Variables ---------------- */
 
 :root {
+
     --footer-height:         4em;
     --padding-from-label:    0.5rem;
-    --label-width:           3.2rem;
+    --label-width:           3.3rem;
+
     --mmemo-line-height:     14px;
     --note-link-line-height: 14px;
 
@@ -122,7 +124,7 @@ body {
     font-family: "menlo","Lucida Console", monospace;
     line-height: var(--mmemo-line-height);
     padding: 0 var(--padding-from-label);
-    font-size: 12px;
+    font-size: 14px;
     color: var(--solar-cyan);
 }
 
