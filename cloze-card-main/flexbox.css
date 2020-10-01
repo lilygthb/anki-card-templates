@@ -42,6 +42,8 @@
 /* ----------- CSS ANKI -------------- */
 
 .card {
+    lang: "it";
+    hyphens: none;
     font-family: "Fira Sans", Verdana, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -68,6 +70,7 @@ i {
 }
 
 body {
+    hyphens: none;
     margin: 0;
     text-align: left;
 }
@@ -85,12 +88,12 @@ body {
 
 .card-content {
     flex: 1;
-    padding: 6% 8% 2% 8%;
+    padding: 6% 12% 2% 12%;
 }
 
 .footer {
     background: var(--color-background-hi);
-    padding: 1% 8%;
+    padding: 1% 12%;
 }
 
 
@@ -218,7 +221,7 @@ ul, ol {
     display: block;
     margin-top: 0.4rem;
     margin-bottom: 1rem;
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
 ul li, ol li {
